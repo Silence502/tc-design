@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #3A5478;
+
+    --modal-mobile-w: 320px;
+    --modal-mobile-h: auto;
+
+    --border-radius-15: 15px;
+    --border-radius-5: 5px;
+}

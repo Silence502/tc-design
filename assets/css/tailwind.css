@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+/*@import "switch.css";*/
+@import "root.css";
+/*@import "animations.css";*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /*body {*/
+    /*    @apply*/
+    /*    dark:bg-primary-bg-dark*/
+    /*}*/
+    h1, h2, h3, h4, h5, h6 {
+        @apply
+        font-abeezee
+        leading-[22px]
+    }
+
+    input, textarea {
+        @apply
+        text-[16px]
+        leading-normal
+        resize-none
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+
+    /*p, article {*/
+    /*    @apply*/
+    /*    text-[20px]*/
+    /*    text-primary-content-light*/
+    /*    dark:text-primary-content-dark*/
+    /*    font-inter*/
+    /*    text-lg*/
+    /*}*/
+    h2 {
+        @apply
+        text-[28px]
+        font-semibold
+        m-0
+        p-0
+        text-tc-primary
+    }
+
+    /*button {*/
+    /*    @apply*/
+    /*    text-[18px]*/
+    /*    min-w-[300px]*/
+    /*    min-h-[48px]*/
+    /*    pl-4*/
+    /*    pr-4*/
+    /*}*/
+}
+
+@layer components {
+    .tc-modal {
+        @apply
+        w-tc-modal-mobile-w
+        h-tc-modal-mobile-h
+        pt-5
+        pb-[30px]
+        rounded-[15px]
+        border-[1px]
+        border-tc-primary
+        shadow-tc-1
+    }
+
+    .tc-input-primary {
+        @apply
+        border-b-[1px]
+        border-l-[1px]
+        rounded-bl-tc-5
+        border-tc-primary
+        opacity-50
+        transition-all
+        pl-2
+        w-[240px]
+    }
+
+    .tc-input-primary:focus {
+        @apply
+        opacity-100
+        border-[1px]
+        rounded-tc-5
+    }
+
+    .tc-textarea-primary {
+        @apply
+        block
+        border-b-[1px]
+        border-l-[1px]
+        rounded-bl-tc-5
+        border-tc-primary
+        opacity-50
+        transition-all
+        pl-2
+        w-[240px]
+        h-[100px]
+    }
+
+    .tc-textarea-primary:focus {
+        @apply
+        opacity-100
+        border-[1px]
+        rounded-tc-5
+    }
+
+    /*.aw-button-primary {*/
+    /*    @apply*/
+    /*    transition*/
+    /*    border-[1px]*/
+    /*    rounded-[.5rem]*/
+    /*    text-primary-light*/
+    /*    dark:text-secondary-content-light*/
+    /*    hover:text-secondary-content-light*/
+    /*    hover:bg-primary-light*/
+    /*    hover:dark:bg-primary-dark*/
+    /*    hover:dark:text-secondary-content-dark*/
+    /*}*/
+    /*.aw-section {*/
+    /*    @apply*/
+    /*    grid*/
+    /*    auto-rows-auto*/
+    /*    justify-items-center*/
+    /*    gap-y-12*/
+    /*    text-center*/
+    /*    relative*/
+    /*    pl-4*/
+    /*    pr-4*/
+    /*}*/
+    /*.aw-section article {*/
+    /*    @apply*/
+    /*    text-justify*/
+    /*}*/
+}
+
+@layer utilities {
+
+}
