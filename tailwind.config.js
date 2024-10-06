@@ -20,6 +20,7 @@ export default {
     },
     colors: {
       'tc-primary': 'var(--primary-color)',
+      'tc-secondary': 'var(--secondary-color)',
     },
     borderRadius: {
       'tc-15': 'var(--border-radius-15)',

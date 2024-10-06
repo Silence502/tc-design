@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 /*@import "switch.css";*/
 @import "root.css";
+@import "input.css";
 /*@import "animations.css";*/
 
 @tailwind base;
@@ -10,52 +11,33 @@
 @tailwind utilities;
 
 @layer base {
-    /*body {*/
-    /*    @apply*/
-    /*    dark:bg-primary-bg-dark*/
-    /*}*/
+    body #__nuxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         @apply
         font-abeezee
         leading-[22px]
     }
 
-    input, textarea {
-        @apply
-        text-[16px]
-        leading-normal
-        resize-none
-    }
-
-    input:focus, textarea:focus {
-        outline: none;
-    }
-
-    /*p, article {*/
-    /*    @apply*/
-    /*    text-[20px]*/
-    /*    text-primary-content-light*/
-    /*    dark:text-primary-content-dark*/
-    /*    font-inter*/
-    /*    text-lg*/
-    /*}*/
-    h2 {
+    h3 {
         @apply
         text-[28px]
-        font-semibold
+        font-normal
         m-0
         p-0
         text-tc-primary
     }
 
-    /*button {*/
-    /*    @apply*/
-    /*    text-[18px]*/
-    /*    min-w-[300px]*/
-    /*    min-h-[48px]*/
-    /*    pl-4*/
-    /*    pr-4*/
-    /*}*/
+    button {
+        @apply
+        cursor-pointer
+    }
 }
 
 @layer components {
@@ -69,75 +51,11 @@
         border-[1px]
         border-tc-primary
         shadow-tc-1
+        grid
+        gap-[30px]
+        justify-items-center
+        relative;
     }
-
-    .tc-input-primary {
-        @apply
-        border-b-[1px]
-        border-l-[1px]
-        rounded-bl-tc-5
-        border-tc-primary
-        opacity-50
-        transition-all
-        pl-2
-        w-[240px]
-    }
-
-    .tc-input-primary:focus {
-        @apply
-        opacity-100
-        border-[1px]
-        rounded-tc-5
-    }
-
-    .tc-textarea-primary {
-        @apply
-        block
-        border-b-[1px]
-        border-l-[1px]
-        rounded-bl-tc-5
-        border-tc-primary
-        opacity-50
-        transition-all
-        pl-2
-        w-[240px]
-        h-[100px]
-    }
-
-    .tc-textarea-primary:focus {
-        @apply
-        opacity-100
-        border-[1px]
-        rounded-tc-5
-    }
-
-    /*.aw-button-primary {*/
-    /*    @apply*/
-    /*    transition*/
-    /*    border-[1px]*/
-    /*    rounded-[.5rem]*/
-    /*    text-primary-light*/
-    /*    dark:text-secondary-content-light*/
-    /*    hover:text-secondary-content-light*/
-    /*    hover:bg-primary-light*/
-    /*    hover:dark:bg-primary-dark*/
-    /*    hover:dark:text-secondary-content-dark*/
-    /*}*/
-    /*.aw-section {*/
-    /*    @apply*/
-    /*    grid*/
-    /*    auto-rows-auto*/
-    /*    justify-items-center*/
-    /*    gap-y-12*/
-    /*    text-center*/
-    /*    relative*/
-    /*    pl-4*/
-    /*    pr-4*/
-    /*}*/
-    /*.aw-section article {*/
-    /*    @apply*/
-    /*    text-justify*/
-    /*}*/
 }
 
 @layer utilities {

@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    input[type='submit'].tc-button-primary,
+    input[type='button'].tc-button-primary {
+        @apply
+        text-[16px]
+        w-[200px]
+        h-[45px]
+        rounded-tc-15
+        bg-tc-secondary
+        cursor-pointer
+        text-tc-primary
+        transition-all
+        font-semibold;
+
+        &:hover {
+            @apply
+            border-[1px]
+            border-tc-primary
+        }
+
+        &:active {
+            @apply
+            opacity-75
+        }
+    }
+
+    input[type='text'],
+    textarea {
+        @apply
+        text-[16px]
+        leading-normal
+        resize-none
+        outline-none
+    }
+}
+
+@layer components {
+    .tc-input-primary {
+        @apply
+        border-b-[1px]
+        border-l-[1px]
+        border-r-[1px]
+        border-t-[1px]
+        border-t-[transparent]
+        border-r-[transparent]
+        rounded-bl-tc-5
+        border-tc-primary
+        opacity-50
+        transition-all
+        pl-2
+        w-[240px]
+        h-[30px]
+    }
+
+    .tc-input-primary:focus {
+        @apply
+        opacity-100
+        border-r-tc-primary
+        border-t-tc-primary
+        rounded-tc-5
+    }
+
+    .tc-textarea-primary {
+        @apply
+        block
+        border-b-[1px]
+        border-l-[1px]
+        border-r-[1px]
+        border-t-[1px]
+        border-t-[transparent]
+        border-r-[transparent]
+        rounded-bl-tc-5
+        border-tc-primary
+        opacity-50
+        transition-all
+        pl-2
+        w-[240px]
+        h-[100px]
+    }
+
+    .tc-textarea-primary:focus {
+        @apply
+        opacity-100
+        border-r-tc-primary
+        border-t-tc-primary
+        rounded-tc-5
+    }
+}
