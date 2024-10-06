@@ -4,10 +4,12 @@
       <X />
     </button>
     <h3>New card</h3>
-    <input class="tc-input-primary" placeholder="Front side*" type="text">
-    <input class="tc-input-primary" placeholder="Back side*" type="text">
-    <textarea class="tc-textarea-primary" placeholder="Note"></textarea>
-    <input type="submit" class="tc-button-primary" value="Add">
+    <div class="tc-modal-content">
+      <input class="tc-input-primary" placeholder="Front side*" type="text">
+      <input class="tc-input-primary" placeholder="Back side*" type="text">
+      <textarea class="tc-textarea-primary" placeholder="Note"></textarea>
+      <input type="submit" class="tc-button-primary" value="Add">
+    </div>
   </div>
 </template>
 

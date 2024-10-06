@@ -55,6 +55,20 @@
         gap-[30px]
         justify-items-center
         relative;
+
+        & button {
+            @apply
+            absolute
+            right-[8px]
+            top-[8px]
+        }
+
+        & .tc-modal-content {
+            @apply
+            grid
+            gap-[30px]
+            justify-items-center
+        }
     }
 }
 
