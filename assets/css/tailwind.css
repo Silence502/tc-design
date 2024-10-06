@@ -56,11 +56,30 @@
         justify-items-center
         relative;
 
-        & button {
+        & .tc-cross {
             @apply
             absolute
             right-[8px]
             top-[8px]
+            text-tc-primary
+        }
+
+        & .tc-paint-bucket {
+            @apply
+            transition-all
+            text-tc-primary;
+
+            & svg {
+                @apply
+                w-[28px]
+                h-[auto]
+                stroke-[2.5]
+            }
+        }
+
+        & .tc-paint-bucket:hover {
+            @apply
+            opacity-75
         }
 
         & .tc-modal-content {

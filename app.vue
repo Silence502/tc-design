@@ -1,6 +1,6 @@
 <template>
   <div class="tc-modal">
-    <button>
+    <button class="tc-cross">
       <X />
     </button>
     <h3>New card</h3>
@@ -11,8 +11,22 @@
       <input type="submit" class="tc-button-primary" value="Add">
     </div>
   </div>
+  <br>
+  <div class="tc-modal">
+    <button class="tc-cross">
+      <X />
+    </button>
+    <h3>New category</h3>
+    <div class="tc-modal-content">
+      <input class="tc-input-primary" placeholder="Name*" type="text">
+      <button class="tc-paint-bucket">
+        <PaintBucket />
+      </button>
+      <input type="submit" class="tc-button-primary" value="Create">
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { X } from 'lucide-vue-next';
+import { X, PaintBucket  } from 'lucide-vue-next';
 </script>
