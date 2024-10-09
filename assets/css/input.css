@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+    input {
+        @apply
+        font-inter
+    }
+
     input[type='submit'].tc-button-primary,
     input[type='button'].tc-button-primary {
         @apply
@@ -11,15 +16,15 @@
         h-[45px]
         rounded-tc-15
         bg-tc-secondary
+        border-tc-primary
         cursor-pointer
         text-tc-primary
-        transition-all
+        transition-opacity
         font-semibold;
 
         &:hover {
             @apply
             border-[1px]
-            border-tc-primary
         }
 
         &:active {

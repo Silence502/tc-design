@@ -14,9 +14,11 @@ export default {
     },
     width: {
       'tc-modal-mobile-w': 'var(--modal-mobile-w)',
+      'tc-card-category-mobile-w': 'var(--card-category-mobile-w)',
     },
     height: {
       'tc-modal-mobile-h': 'var(--modal-mobile-h)',
+      'tc-card-category-mobile-h': 'var(--card-category-mobile-h)',
     },
     colors: {
       'tc-primary': 'var(--primary-color)',

@@ -5,6 +5,9 @@
     --modal-mobile-w: 320px;
     --modal-mobile-h: auto;
 
+    --card-category-mobile-w: 100%;
+    --card-category-mobile-h: 100px;
+
     --border-radius-15: 15px;
     --border-radius-5: 5px;
 }

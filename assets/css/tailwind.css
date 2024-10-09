@@ -16,13 +16,27 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 50px;
+        padding: 50px 18px 0;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    div, span, p, h6 {
+        @apply
+        font-inter
+    }
+
+    h1, h2, h3, h4, h5 {
         @apply
         font-abeezee
         leading-[22px]
+    }
+
+    h6 {
+        @apply
+        text-[20px]
+        font-normal
+        m-0
+        p-0
+        text-tc-primary
     }
 
     h3 {
@@ -66,7 +80,7 @@
 
         & .tc-paint-bucket {
             @apply
-            transition-all
+            transition-opacity
             text-tc-primary;
 
             & svg {
@@ -82,11 +96,65 @@
             opacity-75
         }
 
-        & .tc-modal-content {
+        & .tc-paint-bucket:active {
+            @apply
+            opacity-100
+        }
+
+        & .tc-modal_content {
             @apply
             grid
             gap-[30px]
             justify-items-center
+        }
+
+        & .tc-modal_header {
+            @apply
+            w-[100%];
+
+            & h3 {
+                @apply
+                text-center
+            }
+        }
+    }
+
+    .tc-card-category {
+        @apply
+        w-tc-card-category-mobile-w
+        h-tc-card-category-mobile-h
+        rounded-[15px]
+        border-[1px]
+        border-tc-primary
+        shadow-tc-1
+        flex
+        flex-col
+        justify-center
+        relative;
+
+        & .tc-cross {
+            @apply
+            absolute
+            right-[8px]
+            top-[8px]
+            text-tc-primary
+        }
+
+        & .tc-card-category_content {
+            @apply
+            font-inter
+            flex
+            justify-center
+        }
+
+        & .tc-card-category_header {
+            @apply
+            w-[100%];
+
+            & h3 {
+                @apply
+                text-center
+            }
         }
     }
 }
