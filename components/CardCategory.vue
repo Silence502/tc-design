@@ -15,7 +15,6 @@ import {Palette} from "lucide-vue-next";
       </h6>
     </div>
     <div class="tc-card-category_color">
-
     </div>
   </div>
 </template>
