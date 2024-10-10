@@ -130,14 +130,25 @@
         flex
         flex-col
         justify-center
+        overflow-hidden
         relative;
 
-        & .tc-cross {
+        & .tc-palette {
             @apply
             absolute
             right-[8px]
             top-[8px]
             text-tc-primary
+        }
+
+        & .tc-palette:hover {
+            @apply
+            opacity-75
+        }
+
+        & .tc-palette:active {
+            @apply
+            opacity-100
         }
 
         & .tc-card-category_content {
@@ -155,6 +166,16 @@
                 @apply
                 text-center
             }
+        }
+
+        & .tc-card-category_color {
+            @apply
+            bg-[#b1c5e0]
+            absolute
+            top-0
+            left-0
+            min-h-full
+            w-[35px]
         }
     }
 }
