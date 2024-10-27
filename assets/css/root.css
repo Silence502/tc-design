@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #3A5478;
-    --secondary-color: #F8DACA;
+    --primary-color: #406280;
+    --secondary-color: #CAE9FF;
+    --tertiary-color: #5FA8D3;
 
     --modal-mobile-w: 320px;
     --modal-mobile-h: auto;
