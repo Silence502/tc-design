@@ -7,6 +7,8 @@
   <Button01>Sign In</Button01>
   <br>
   <Button02>Sign Up</Button02>
+  <br>
+  <ButtonOptions />
 </template>
 
 <script setup lang="ts">

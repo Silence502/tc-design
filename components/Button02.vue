@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <button class="btn-container">
+  <button class="tc-button-secondary">
     <a class="link-tag" href="#">
       <span><slot></slot></span>
       <div class="shape-primary shape path primary-2eacbd501b01">
@@ -41,73 +41,5 @@
 </template>
 
 <style scoped>
-.btn-container {
-  width: 200px;
-  height: 50px;
-  color: #406280;
-  position: relative;
-
-  & span {
-    margin-bottom: 5px;
-  }
-
-  & .shape-primary {
-    z-index: -1;
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-
-  & .shape-secondary {
-    z-index: -2;
-    top: 0;
-    left: 0;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.1s ease;
-  }
-}
-
-.btn-container:hover {
-  & .shape-secondary {
-    opacity: 1;
-    transition: opacity 0.1s ease;
-    animation: bounce .1s ease;
-  }
-
-  & span {
-    transform: scale(1.1);
-    transition: transform 0.1s ease .1s;
-    margin-bottom: 5px;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(0);
-  }
-
-  85% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg) scale(1.1);
-  }
-
-  50% {
-    transform: rotate(2deg) scale(1.1);
-  }
-
-  100% {
-    transform: rotate(-2deg) scale(1.1);
-  }
-}
 
 </style>

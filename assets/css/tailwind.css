@@ -21,6 +21,7 @@
         padding: 50px 18px 0;
         height: 100vh;
     }
+
     body {
         @apply
         bg-tc-tertiary
@@ -236,6 +237,101 @@
                 transform: scale(1.1);
                 transition: transform 0.1s .1s;
             }
+        }
+    }
+
+    .tc-button-secondary {
+        @apply
+        relative
+        w-[200px]
+        h-[50px]
+        text-tc-primary;
+
+        & span {
+            @apply
+            mb-[5px];
+        }
+
+        & .shape-primary {
+            @apply
+            absolute
+            -z-[1]
+            top-0
+            left-0;
+        }
+
+        & .shape-secondary {
+            transition: opacity 0.1s ease;
+            @apply
+            -z-[2]
+            top-0
+            left-0
+            absolute
+            opacity-0;
+        }
+
+        &:hover {
+            & .shape-secondary {
+                transition: opacity 0.1s ease, transform .5s;
+                animation: bounce .1s ease;
+                @apply
+                opacity-100;
+            }
+
+            & span {
+                transform: scale(1.1);
+                transition: transform 0.1s .1s;
+            }
+        }
+    }
+
+    .tc-button-circle {
+        @apply
+        z-0
+        flex
+        relative
+        items-center
+        w-[52px]
+        h-[52px]
+        justify-center;
+
+        .tc-button-content {
+            @apply
+            font-carter
+            text-[24px]
+        }
+
+        .ellipse-1 {
+            @apply
+            absolute
+            left-[4px]
+            top-[3px]
+            w-[48px]
+            h-[48px]
+            bg-tc-primary
+            rounded-[50%]
+        }
+
+        .ellipse-2 {
+            @apply
+            -z-10
+            absolute
+            left-0
+            top-0
+            w-[52px]
+            h-[52px]
+            bg-tc-secondary
+            rounded-[50%]
+        }
+    }
+
+    .tc-button-circle:hover {
+        .ellipse-2 {
+            animation: rotationCircle .1s forwards .2s, bounceCircle .1s forwards;
+        }
+
+        .tc-button-content {
+            animation: rotation .2s forwards .1s;
         }
     }
 }
