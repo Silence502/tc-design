@@ -17,6 +17,10 @@
         transform: scale(1);
     }
 
+    85% {
+        transform: scale(1.2);
+    }
+
     100% {
         transform: scale(1.06);
     }
@@ -38,6 +42,6 @@
     }
 
     100% {
-        transform: rotate(2deg) scale(1.2);
+        transform: rotate(5deg) scale(1.4);
     }
 }
